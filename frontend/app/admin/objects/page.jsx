@@ -67,7 +67,7 @@ const ObjectsListPage = () => {
                     className="w-full h-40 object-cover mt-2 rounded"
                   />
                 )}
-                <p className="text-lg pt-4"># {object.id}</p>
+                <p className="text-[12px] pt-4"># {object.id}</p>
                 <h3 className="text-lg font-semibold ">{object.name_english}</h3>
                 <div className="mt-2">
                   <button
