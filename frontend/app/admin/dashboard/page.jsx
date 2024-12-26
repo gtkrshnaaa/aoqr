@@ -53,7 +53,7 @@ export default function Dashboard() {
       <Sidebar />
       <div className="flex-1 p-5">
         <h1 className="text-3xl">Admin Dashboard</h1>
-        <p className="mb-20">Selamat datang di halaman dashboard admin.</p>
+        <p className="mb-20">Welcome to your dashboard, dear admin.</p>
 
         <hr />
         <hr />
@@ -62,7 +62,7 @@ export default function Dashboard() {
         <hr />
 
         <h1 className="text-xl font-bold">Object View Rank</h1>
-        <p>Daftar ranking object dengan urutan dilihat paling banyak ke paling sedikit</p>
+        <p>A ranking list of objects in order of most to least views.</p>
         <table className="min-w-full border-collapse mt-4">
           <thead>
             <tr>
