@@ -68,7 +68,7 @@ async function migrateUp() {
         // Buat tabel objects
         await db.query(`
             CREATE TABLE IF NOT EXISTS objects (
-                id INT AUTO_INCREMENT PRIMARY KEY,
+                id CHAR(36) NOT NULL PRIMARY KEY DEFAULT (UUID()),
                 image_url JSON,
                 qr_image_url VARCHAR(255) NULL,
                 category_id INT,
