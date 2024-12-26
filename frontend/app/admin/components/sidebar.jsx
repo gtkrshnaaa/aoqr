@@ -32,7 +32,7 @@ export default function Sidebar() {
             href="/admin/categories"
             className="block py-2 px-4 hover:bg-blue-100 hover:bg-opacity-10 hover:text-white rounded"
           >
-            Pengelolaan Kategori
+            Manage Category
           </Link>
         </li>
         <li>
@@ -40,7 +40,7 @@ export default function Sidebar() {
             href="/admin/objects"
             className="block py-2 px-4 hover:bg-blue-100 hover:bg-opacity-10 hover:text-white rounded"
           >
-            Pengelolaan Objek
+            Manage Object
           </Link>
         </li>
       </ul>
