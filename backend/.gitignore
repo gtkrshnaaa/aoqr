@@ -1,0 +1,12 @@
+# Mengabaikan folder node_modules
+node_modules/
+
+# Mengabaikan file gambar di folder uploads
+public/uploads/*.png
+public/uploads/*.jpg
+public/uploads/*.jpeg
+
+# Mengabaikan file gambar di folder qrcode
+public/qrcode/*.png
+public/qrcode/*.jpg
+public/qrcode/*.jpeg
