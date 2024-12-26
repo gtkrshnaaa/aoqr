@@ -65,12 +65,12 @@ export default function CategoriesPage() {
     <div className="flex">
       <Sidebar />
       <div className="m-5">
-      <h1 className="text-3xl mb-5">Pengelolaan Kategori</h1>
+      <h1 className="text-3xl mb-5">Manage Categories</h1>
 
       <div className="mb-5">
         <input
           type="text"
-          placeholder="Nama kategori"
+          placeholder="Category Name"
           value={newCategory}
           onChange={(e) => setNewCategory(e.target.value)}
           className="border px-4 py-2 mr-2"
@@ -79,7 +79,7 @@ export default function CategoriesPage() {
           onClick={handleCreateCategory}
           className="bg-blue-500 text-white px-4 py-2"
         >
-          Tambah Kategori
+          Add Category
         </button>
       </div>
 
@@ -95,13 +95,13 @@ export default function CategoriesPage() {
             onClick={handleUpdateCategory}
             className="bg-yellow-500 text-white px-4 py-2"
           >
-            Update Kategori
+            Update Category
           </button>
         </div>
       )}
 
       <div>
-        <h2 className="text-2xl mb-3">Daftar Kategori</h2>
+        <h2 className="text-2xl mb-3">Category List</h2>
         <ul>
           {categories.map((category) => (
             <li key={category.id} className="mb-3 flex justify-between items-center">
@@ -117,7 +117,7 @@ export default function CategoriesPage() {
                   onClick={() => handleDeleteCategory(category.id)}
                   className="bg-gray-200 text-red-500 px-4 py-2 rounded mr-2"
                 >
-                  Hapus
+                  Delete
                 </button>
               </div>
             </li>
