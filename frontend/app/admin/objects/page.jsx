@@ -83,6 +83,14 @@ const ObjectsListPage = () => {
                     Edit
                   </button>
                   <button
+                    onClick={() => {
+                      window.location.href = `/admin/objects/qrcode/${object.id}`;
+                    }}
+                    className="bg-gray-200 text-purple-500 px-4 py-2 rounded mr-2"
+                  >
+                    QR
+                  </button>
+                  <button
                     onClick={() => handleDelete(object.id)}
                     className="bg-gray-200 text-red-500 px-4 py-2 rounded"
                   >

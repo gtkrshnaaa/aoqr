@@ -44,7 +44,7 @@ async function generateQRCodeWithLogo(text, logoPath, outputPath, displayUrl) {
         const textHeight = 30;
         const textBg = new Jimp(qrImage.bitmap.width, textHeight, '#FFFFFF');
         const font = await Jimp.loadFont(Jimp.FONT_SANS_16_BLACK);
-        textBg.print(font, 10, 5, displayUrl);
+        // textBg.print(font, 10, 5, displayUrl);
         const finalImage = new Jimp(qrImage.bitmap.width, qrImage.bitmap.height + textHeight);
         finalImage.composite(qrImage, 0, 0);
         finalImage.composite(textBg, 0, qrImage.bitmap.height);
