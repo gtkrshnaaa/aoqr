@@ -86,20 +86,28 @@ export default function DetailObjectPage() {
   // Fungsi untuk scroll gambar ke kiri
   const scrollLeft = () => {
     const gallery = document.getElementById('image-gallery');
+    const firstImage = gallery.querySelector('img');
+    const imageWidth = firstImage ? firstImage.clientWidth : 400; // Default 400 jika tidak ada gambar
+    const margin = 16; // Ubah sesuai dengan margin antar gambar (dalam piksel)
     gallery.scrollBy({
-      left: -400, // Scroll 300px ke kiri
-      behavior: 'smooth', // Animasi scroll
+      left: -(imageWidth + margin), // Scroll sesuai lebar gambar + margin
+      behavior: 'smooth',
     });
   };
 
   // Fungsi untuk scroll gambar ke kanan
   const scrollRight = () => {
     const gallery = document.getElementById('image-gallery');
+    const firstImage = gallery.querySelector('img');
+    const imageWidth = firstImage ? firstImage.clientWidth : 400; // Default 400 jika tidak ada gambar
+    const margin = 16; // Ubah sesuai dengan margin antar gambar (dalam piksel)
     gallery.scrollBy({
-      left: 400, // Scroll 400px ke kanan
-      behavior: 'smooth', // Animasi scroll
+      left: imageWidth + margin, // Scroll sesuai lebar gambar + margin
+      behavior: 'smooth',
     });
   };
+
+
 
 
 
