@@ -138,7 +138,7 @@ export default function DetailObjectPage() {
           <button
             onClick={handleGenerateQRCode}
             disabled={qrCodeLoading}
-            className={`px-4 py-2 mt-2 text-white ${qrCodeLoading ? 'bg-gray-500' : 'bg-blue-500 hover:bg-blue-700'} rounded`}
+            className={`px-4 py-2 mt-2 text-white ${qrCodeLoading ? 'bg-gray-500' : 'bg-[#AAA577]'} rounded`}
           >
             {qrCodeLoading ? 'Generating...' : 'Generate QR Code'}
           </button>

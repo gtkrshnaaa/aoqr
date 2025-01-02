@@ -96,7 +96,7 @@ export default function DetailObjectPage() {
   const scrollRight = () => {
     const gallery = document.getElementById('image-gallery');
     gallery.scrollBy({
-      left: 400, // Scroll 300px ke kanan
+      left: 400, // Scroll 400px ke kanan
       behavior: 'smooth', // Animasi scroll
     });
   };

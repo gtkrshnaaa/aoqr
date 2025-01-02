@@ -48,7 +48,7 @@ const ObjectsListPage = () => {
           onClick={() => {
             window.location.href = '/admin/objects/create';
           }}
-          className="bg-blue-500 text-white p-2 rounded mb-4"
+          className="bg-[#AAA577] text-white p-2 rounded mb-4"
         >
           Add Object
         </button>

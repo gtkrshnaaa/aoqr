@@ -77,7 +77,7 @@ export default function CategoriesPage() {
         />
         <button
           onClick={handleCreateCategory}
-          className="bg-blue-500 text-white px-4 py-2"
+          className="bg-[#AAA577] text-white px-4 py-2"
         >
           Add Category
         </button>
@@ -93,7 +93,7 @@ export default function CategoriesPage() {
           />
           <button
             onClick={handleUpdateCategory}
-            className="bg-yellow-500 text-white px-4 py-2"
+            className="bg-[#AAA577] text-white px-4 py-2"
           >
             Update Category
           </button>
