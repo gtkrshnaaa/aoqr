@@ -12,7 +12,7 @@ export default function CategoriesPage() {
   const [editingCategory, setEditingCategory] = useState(null);
 
   // Base URL API
-  const baseURL = 'http://localhost:9977/api'; // Ganti dengan URL API yang sesuai
+  const baseURL = 'http://localhost:9977'; // Ganti dengan URL API yang sesuai
 
   // Fetch kategori dari API
   useEffect(() => {
@@ -21,7 +21,7 @@ export default function CategoriesPage() {
 
   const fetchCategories = async () => {
     try {
-      const response = await axios.get(`${baseURL}/categories/get-all`);
+      const response = await axios.get(`${baseURL}/api/categories/get-all`);
       setCategories(response.data);
     } catch (error) {
       console.error('Failed to fetch categories', error);
@@ -30,7 +30,7 @@ export default function CategoriesPage() {
 
   const handleCreateCategory = async () => {
     try {
-      await axios.post(`${baseURL}/categories/create`, { name: newCategory });
+      await axios.post(`${baseURL}/api/categories/create`, { name: newCategory });
       setNewCategory('');
       fetchCategories(); // Refresh kategori
     } catch (error) {
@@ -40,7 +40,7 @@ export default function CategoriesPage() {
 
   const handleDeleteCategory = async (id) => {
     try {
-      await axios.delete(`${baseURL}/categories/delete/${id}`);
+      await axios.delete(`${baseURL}/api/categories/delete/${id}`);
       fetchCategories(); // Refresh kategori
     } catch (error) {
       console.error('Failed to delete category', error);
@@ -53,7 +53,7 @@ export default function CategoriesPage() {
 
   const handleUpdateCategory = async () => {
     try {
-      await axios.put(`${baseURL}/categories/update/${editingCategory.id}`, { name: editingCategory.name });
+      await axios.put(`${baseURL}/api/categories/update/${editingCategory.id}`, { name: editingCategory.name });
       setEditingCategory(null); // Close edit form
       fetchCategories(); // Refresh kategori
     } catch (error) {
