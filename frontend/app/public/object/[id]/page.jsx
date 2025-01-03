@@ -176,8 +176,8 @@ export default function DetailObjectPage() {
   };
 
   return (
-    <div className="bg-[#F7EFE8]">
-    <div className="bg-[#F7EFE8] mx-auto">
+    <div className="bg-[#F7EFE8] min-h-screen flex flex-col">
+    <div className="bg-[#F7EFE8] mx-auto flex-1">
       {/* Navbar */}
       <div className="flex justify-between items-center z-20 top-0 sticky shadow px-5 py-4 border-b bg-white">
       {/* Logo di kiri */}
@@ -338,7 +338,7 @@ export default function DetailObjectPage() {
 
     {/* footer */}
 
-    <footer className="bg-[#9F9B6E] text-white p-4">
+    <footer className="bg-[#9F9B6E] text-white p-4 mt-auto">
     <p className="text-center font-normal mb-3">ROYAL AMBARRUKMO YOGYAKARTA</p>
     <p className="text-center font-light mb-3">
       Jalan Laksada Adisucipto No. 81, <br />Yogyakarta 55281 - Indonesia
